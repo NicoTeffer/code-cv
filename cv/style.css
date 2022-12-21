@@ -340,3 +340,323 @@ nav ul li:hover ul {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
+/* Media Queries for print-media */
+@media print {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  body {
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #fff;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+  }
+  .container .left_side {
+    position: relative;
+    background: hsl(218, 22%, 17%);
+    padding: 40px;
+  }
+  .profileText {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  .profileText .imgBx {
+    position: sticky;
+    inset-inline-start: 1em;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .profileText .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110%;
+    height: 120%;
+    object-fit: cover;
+  }
+  .profileText h2 {
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.4em;
+  }
+  .profileText h2 span {
+    font-size: 0.8em;
+    font-weight: 300;
+  }
+  
+  .city {
+    margin-inline-start: 2em;
+  }
+  
+  .contactInfo {
+    padding-top: 10px;
+  }
+  .title {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    margin-bottom: 2px;
+  }
+  .contactInfo ul {
+    position: relative;
+  }
+  .contactInfo ul li {
+    position: relative;
+    list-style: none;
+    max-width: 10px 0;
+  }
+  .contactInfo ul li .icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #03a9f4;
+  }
+  
+  .contactInfo ul li span {
+    color: #fff;
+    font-weight: 300;
+  }
+  .contactInfo ul li span a.nav-link:link {
+    color: #fff;
+    font-weight: 300;
+  }
+  .contactInfo ul li span a.nav-link:visited {
+    color: #03a9f4;
+    font-weight: 300;
+  }
+  
+  .contactInfo.education li {
+    margin-bottom: 10px;
+  }
+  .contactInfo.education h5 {
+    color: #03a9f4;
+    font-weight: 500;
+  }
+  .contactInfo.education h4:nth-child(2) {
+    color: #fff;
+    font-weight: 500;
+  }
+  .contactInfo.education h4 {
+    color: #fff;
+    font-weight: 300;
+  }
+  .contactInfo.skills .text {
+    font-size: 0.9rem;
+  }
+  .contactInfo.skills .percent {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #4c5052;
+    display: block;
+    margin-bottom: 10px;
+  }
+  .contactInfo.skills .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+  }
+  .contactInfo.skills ul li div {
+    font-size: 0.8rem;
+    color: #fff;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .last-edit p{
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    font-size: 1rem;
+    color: rgb(3, 169, 244);
+    font-family: "Poppins", sans-serif;
+  }
+  .container .right_side {
+    position: relative;
+    background: rgb(63, 77, 88);
+    padding: 40px;
+  }
+  .about {
+    margin-bottom: 50px;
+  }
+  .about:last-child {
+    margin-bottom: 0;
+  }
+  .title2 {
+    color: rgb(3, 169, 244);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+  }
+  p {
+    color: #fff;
+  }
+  .about .box {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+  }
+  .about .box .year_company {
+    min-width: 150px;
+    margin-bottom: 5px;
+    margin-top: 0.1em;
+  }
+  .about .box .year_company h5 {
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    color: #848c90;
+    margin-bottom: 5px;
+    font-weight: 600;
+  }
+  .about .box .text h4 {
+    text-transform: uppercase;
+    color: rgb(3, 169, 244);
+    font-size: 18px;
+    padding-bottom: 2px;
+  }
+  .about .box .text p {
+    padding-bottom: 7px;
+    font-size: 14px;
+  }
+  .about .box .text span {
+    text-transform: uppercase;
+    color: rgb(3, 169, 244);
+    font-size: 16px;
+  }
+  .about .box .text ul {
+    font-size: 14px;
+    padding: 10px 30px;
+    color: rgb(3, 169, 244);
+  }
+  .about .box .text ul p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
+  }
+  
+  .skills .box {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+  .skills .box h4 {
+    text-transform: uppercase;
+    color: #848c99;
+    font-weight: 500;
+  }
+  .skills .box .percent {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #f0f0f0;
+  }
+  .skills .box .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgb(128, 122, 171);
+  }
+  .interest ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+  }
+  .interest ul li {
+    list-style: none;
+    color: #fff;
+    font-weight: 500;
+    margin: 10px 0;
+  }
+  .interest ul li .fa {
+    color: #03a9f4;
+    font-size: 18px;
+    width: 20px;
+  }
+  
+  .box-List {
+    color: white !important;
+    list-style-type: circle;
+  }
+  
+  nav {
+    width: 100%;
+    height: 40px;
+    margin-block-end: 20px;
+  }
+  
+  nav ul {
+    float: left;
+  }
+  
+  nav ul li {
+    float: left;
+    list-style: none;
+    position: relative;
+  }
+  
+  nav ul li a {
+    font-family: poppins;
+    color: white;
+    padding: 10px 14px;
+    text-decoration: none;
+  }
+  
+  nav ul li ul {
+    z-index: 10;
+    display: none;
+    position: absolute;
+    background-color: rgb(63, 77, 88);
+    padding: 6px;
+    border-radius: 0px 0px 4px 4px;
+  }
+  
+  nav ul li ul li {
+    width: 100px;
+  }
+  
+  nav ul li ul li a {
+    padding: 1px 17px;
+  }
+  
+  nav ul li ul li a:hover {
+    background-color: #03a9f4;
+  }
+  
+  nav ul li:hover ul {
+    display: block;
+  }
+}
