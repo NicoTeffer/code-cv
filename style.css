@@ -613,38 +613,6 @@ nav ul li:hover ul {
   }
   
   nav {
-    visibility: hidden;
-  }
-  
-  nav ul {
-    visibility: hidden;
-  }
-  
-  nav ul li {
-    visibility: hidden;
-  }
-  
-  nav ul li a {
-    visibility: hidden;
-  }
-  
-  nav ul li ul {
-    visibility: hidden;
-  }
-  
-  nav ul li ul li {
-    visibility: hidden;
-  }
-  
-  nav ul li ul li a {
-    visibility: hidden;
-  }
-  
-  nav ul li ul li a:hover {
-    visibility: hidden;
-  }
-  
-  nav ul li:hover ul {
-    visibility: hidden;
+    display: none;
   }
 }
