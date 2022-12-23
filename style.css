@@ -87,7 +87,6 @@ body {
 .contactInfo ul li {
   position: relative;
   list-style: none;
-  max-width: 10px 0;
 }
 .contactInfo ul li .icon {
   display: inline-block;
@@ -486,7 +485,6 @@ nav ul li:hover ul {
   .contactInfo ul li {
     position: relative;
     list-style: none;
-    max-width: 10px 0;
   }
   .contactInfo ul li .icon {
     display: inline-block;
