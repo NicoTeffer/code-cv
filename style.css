@@ -98,14 +98,17 @@ body {
 .contactInfo ul li span {
   color: #fff;
   font-weight: 300;
+  font-size: medium;
 }
 .contactInfo ul li span a.nav-link:link {
   color: #fff;
   font-weight: 300;
+  font-size: medium;
 }
 .contactInfo ul li span a.nav-link:visited {
   color: #03a9f4;
   font-weight: 300;
+  font-size: medium;
 }
 
 .contactInfo.education li {
@@ -424,7 +427,7 @@ nav ul li:hover ul {
   .container .left_side {
     position: relative;
     background: hsl(218, 22%, 17%);
-    padding: 40px;
+    padding: 26px;
   }
   .profileText {
     display: flex;
@@ -500,10 +503,12 @@ nav ul li:hover ul {
   .contactInfo ul li span a.nav-link:link {
     color: #fff;
     font-weight: 300;
+    font-size: medium;
   }
   .contactInfo ul li span a.nav-link:visited {
     color: #03a9f4;
     font-weight: 300;
+    font-size: medium;
   }
   
   .contactInfo.education li {
